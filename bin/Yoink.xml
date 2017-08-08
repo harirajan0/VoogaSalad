@@ -1,0 +1,558 @@
+<gamedata.GameData>
+  <name>Yoink</name>
+  <levels>
+    <entry>
+      <int>1</int>
+      <gamedata.LevelData>
+        <myWaves>
+          <gamedata.WaveData>
+            <waveEnemies>
+              <gamedata.EnemyInWaveData>
+                <myActor>
+                  <myData>
+                    <entry>
+                      <string>MoveWithSetPath</string>
+                      <gamedata.composition.MoveWithSetPathData>
+                        <mySpeed>0.009</mySpeed>
+                        <myPaths/>
+                      </gamedata.composition.MoveWithSetPathData>
+                    </entry>
+                    <entry>
+                      <string>ActorDamageable</string>
+                      <gamedata.composition.ActorDamageableData>
+                        <myHitRadius>0.1</myHitRadius>
+                        <myEnemyTypes/>
+                      </gamedata.composition.ActorDamageableData>
+                    </entry>
+                  </myData>
+                  <type>
+                    <type>Troop</type>
+                    <placeable>false</placeable>
+                  </type>
+                  <health class="gamedata.composition.LimitedHealthData">
+                    <startHealth>1.0</startHealth>
+                  </health>
+                  <basic>
+                    <name>Red</name>
+                    <isActive>true</isActive>
+                    <imagePath>balloons/red.png</imagePath>
+                    <heading>0.0</heading>
+                  </basic>
+                  <layer>
+                    <myPolygons>
+                      <gamedata.map.PolygonData>
+                        <myPoints>
+                          <util.Location>
+                            <loc>
+                              <x class="double">0.0019083969465648854</x>
+                              <y class="double">0.006802721088435374</y>
+                            </loc>
+                          </util.Location>
+                          <util.Location>
+                            <loc>
+                              <x class="double">0.0019083969465648854</x>
+                              <y class="double">1.0</y>
+                            </loc>
+                          </util.Location>
+                          <util.Location>
+                            <loc>
+                              <x class="double">1.0</x>
+                              <y class="double">1.0</y>
+                            </loc>
+                          </util.Location>
+                          <util.Location>
+                            <loc>
+                              <x class="double">0.998091603053435</x>
+                              <y class="double">0.0</y>
+                            </loc>
+                          </util.Location>
+                        </myPoints>
+                      </gamedata.map.PolygonData>
+                    </myPolygons>
+                  </layer>
+                  <layerName>everything</layerName>
+                  <cost>0.0</cost>
+                </myActor>
+                <myNumber>2</myNumber>
+              </gamedata.EnemyInWaveData>
+              <gamedata.EnemyInWaveData>
+                <myActor>
+                  <myData>
+                    <entry>
+                      <string>MoveWithSetPath</string>
+                      <gamedata.composition.MoveWithSetPathData>
+                        <mySpeed>0.005</mySpeed>
+                        <myPaths/>
+                      </gamedata.composition.MoveWithSetPathData>
+                    </entry>
+                    <entry>
+                      <string>ActorDamageable</string>
+                      <gamedata.composition.ActorDamageableData>
+                        <myHitRadius>0.1</myHitRadius>
+                        <myEnemyTypes/>
+                      </gamedata.composition.ActorDamageableData>
+                    </entry>
+                  </myData>
+                  <type reference="../../../gamedata.EnemyInWaveData/myActor/type"/>
+                  <health class="gamedata.composition.LimitedHealthData">
+                    <startHealth>1.0</startHealth>
+                  </health>
+                  <basic>
+                    <name>Blue</name>
+                    <isActive>true</isActive>
+                    <imagePath>balloons/blue.png</imagePath>
+                    <heading>0.0</heading>
+                  </basic>
+                  <layer reference="../../../gamedata.EnemyInWaveData/myActor/layer"/>
+                  <layerName>everything</layerName>
+                  <cost>0.0</cost>
+                </myActor>
+                <myNumber>1</myNumber>
+              </gamedata.EnemyInWaveData>
+              <gamedata.EnemyInWaveData>
+                <myActor>
+                  <myData>
+                    <entry>
+                      <string>MoveWithSetPath</string>
+                      <gamedata.composition.MoveWithSetPathData>
+                        <mySpeed>0.005</mySpeed>
+                        <myPaths/>
+                      </gamedata.composition.MoveWithSetPathData>
+                    </entry>
+                    <entry>
+                      <string>ActorDamageable</string>
+                      <gamedata.composition.ActorDamageableData>
+                        <myHitRadius>0.1</myHitRadius>
+                        <myEnemyTypes/>
+                      </gamedata.composition.ActorDamageableData>
+                    </entry>
+                  </myData>
+                  <type reference="../../../gamedata.EnemyInWaveData/myActor/type"/>
+                  <health class="gamedata.composition.LimitedHealthData">
+                    <startHealth>1.0</startHealth>
+                  </health>
+                  <basic>
+                    <name>Green</name>
+                    <isActive>true</isActive>
+                    <imagePath>balloons/green.png</imagePath>
+                    <heading>0.0</heading>
+                  </basic>
+                  <layer reference="../../../gamedata.EnemyInWaveData/myActor/layer"/>
+                  <layerName>everything</layerName>
+                  <cost>0.0</cost>
+                </myActor>
+                <myNumber>4</myNumber>
+              </gamedata.EnemyInWaveData>
+            </waveEnemies>
+          </gamedata.WaveData>
+        </myWaves>
+        <duration>100.0</duration>
+        <healthMultiplier>-1.0</healthMultiplier>
+        <speedMultiplier>-1.0</speedMultiplier>
+        <attackMultiplier>-1.0</attackMultiplier>
+      </gamedata.LevelData>
+    </entry>
+  </levels>
+  <preferences>
+    <numLives>
+      <value class="int">0</value>
+    </numLives>
+    <enemyLoop>
+      <value class="boolean">false</value>
+    </enemyLoop>
+    <towersAttackable>
+      <value class="boolean">false</value>
+    </towersAttackable>
+    <wantMoney>
+      <value class="boolean">false</value>
+    </wantMoney>
+    <expByLevel>
+      <value class="boolean">false</value>
+    </expByLevel>
+    <pauseBetweenWaves>
+      <value class="boolean">false</value>
+    </pauseBetweenWaves>
+    <cleanLevel>
+      <value class="boolean">false</value>
+    </cleanLevel>
+    <musicFilePath>music/hero_song.mp3</musicFilePath>
+  </preferences>
+  <myLayers>
+    <myPathData>
+      <myPaths>
+        <entry>
+          <int>0</int>
+          <list>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.02099236641221374</x>
+              <y>0.2131578947368421</y>
+            </gameengine.grid.classes.Coordinates>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.16793893129770993</x>
+              <y>0.33421052631578946</y>
+            </gameengine.grid.classes.Coordinates>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.08778625954198473</x>
+              <y>0.6947368421052632</y>
+            </gameengine.grid.classes.Coordinates>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.29770992366412213</x>
+              <y>0.7973684210526316</y>
+            </gameengine.grid.classes.Coordinates>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.4713740458015267</x>
+              <y>0.6342105263157894</y>
+            </gameengine.grid.classes.Coordinates>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.36450381679389315</x>
+              <y>0.3157894736842105</y>
+            </gameengine.grid.classes.Coordinates>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.49427480916030536</x>
+              <y>0.23157894736842105</y>
+            </gameengine.grid.classes.Coordinates>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.6393129770992366</x>
+              <y>0.3447368421052632</y>
+            </gameengine.grid.classes.Coordinates>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.5858778625954199</x>
+              <y>0.6842105263157895</y>
+            </gameengine.grid.classes.Coordinates>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.7270992366412213</x>
+              <y>0.8052631578947368</y>
+            </gameengine.grid.classes.Coordinates>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.8816793893129771</x>
+              <y>0.6947368421052632</y>
+            </gameengine.grid.classes.Coordinates>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.8034351145038168</x>
+              <y>0.3</y>
+            </gameengine.grid.classes.Coordinates>
+            <gameengine.grid.classes.Coordinates>
+              <x>0.9713740458015268</x>
+              <y>0.28421052631578947</y>
+            </gameengine.grid.classes.Coordinates>
+          </list>
+        </entry>
+      </myPaths>
+      <numOptions>1</numOptions>
+    </myPathData>
+    <myLayers>
+      <entry>
+        <string>everything</string>
+        <gamedata.LayerData reference="../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData/myActor/layer"/>
+      </entry>
+    </myLayers>
+  </myLayers>
+  <types/>
+  <display>
+    <width>80</width>
+    <height>400</height>
+    <location>Left</location>
+  </display>
+  <pieces>
+    <entry>
+      <int>0</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData>
+                <entry>
+                  <string>ShootHeatSeeking</string>
+                  <gamedata.composition.ShootHeatSeekingData>
+                    <myRange>1.0</myRange>
+                    <fireRate>5</fireRate>
+                    <myTarget>
+                      <type>Troop</type>
+                      <placeable>true</placeable>
+                    </myTarget>
+                    <myProjectile>10</myProjectile>
+                    <mySpeed>0.08</mySpeed>
+                  </gamedata.composition.ShootHeatSeekingData>
+                </entry>
+              </myData>
+              <type>
+                <type>Tower</type>
+                <placeable>true</placeable>
+              </type>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>1.0</startHealth>
+              </health>
+              <basic>
+                <name>Bullbasaur</name>
+                <isActive>true</isActive>
+                <imagePath>Pokemon Icons/bullbasaur.png</imagePath>
+                <heading>0.0</heading>
+              </basic>
+              <layer reference="../../../../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData/myActor/layer"/>
+              <layerName>everything</layerName>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>1</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type reference="../../../../../../entry/gamedata.LineageData/generations/entry/gamedata.ActorData/type"/>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>1.0</startHealth>
+              </health>
+              <basic>
+                <name>Pikachu</name>
+                <isActive>true</isActive>
+                <imagePath>Pokemon Icons/pikachu.png</imagePath>
+                <heading>0.0</heading>
+              </basic>
+              <layer reference="../../../../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData/myActor/layer"/>
+              <layerName>everything</layerName>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>2</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type reference="../../../../../../entry/gamedata.LineageData/generations/entry/gamedata.ActorData/type"/>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>1.0</startHealth>
+              </health>
+              <basic>
+                <name>Jigglypuff</name>
+                <isActive>true</isActive>
+                <imagePath>Pokemon Icons/jigglypuff.png</imagePath>
+                <heading>0.0</heading>
+              </basic>
+              <layer reference="../../../../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData/myActor/layer"/>
+              <layerName>everything</layerName>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>3</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type reference="../../../../../../entry/gamedata.LineageData/generations/entry/gamedata.ActorData/type"/>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>1.0</startHealth>
+              </health>
+              <basic>
+                <name>Charmander</name>
+                <isActive>true</isActive>
+                <imagePath>Pokemon Icons/charmander.png</imagePath>
+                <heading>0.0</heading>
+              </basic>
+              <layer reference="../../../../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData/myActor/layer"/>
+              <layerName>everything</layerName>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>4</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type reference="../../../../../../entry/gamedata.LineageData/generations/entry/gamedata.ActorData/type"/>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>1.0</startHealth>
+              </health>
+              <basic>
+                <name>Snorlax</name>
+                <isActive>true</isActive>
+                <imagePath>Pokemon Icons/snorlax.png</imagePath>
+                <heading>0.0</heading>
+              </basic>
+              <layer reference="../../../../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData/myActor/layer"/>
+              <layerName>everything</layerName>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>5</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData reference="../../../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData/myActor"/>
+          </entry>
+        </generations>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>6</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData reference="../../../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData[2]/myActor"/>
+          </entry>
+        </generations>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>7</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData reference="../../../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData[3]/myActor"/>
+          </entry>
+        </generations>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>8</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type>
+                <type>Projectile</type>
+                <placeable>false</placeable>
+              </type>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>1.0</startHealth>
+              </health>
+              <basic>
+                <name>Water</name>
+                <isActive>true</isActive>
+                <imagePath>projectiles/raindrop.png</imagePath>
+                <heading>0.0</heading>
+              </basic>
+              <layer reference="../../../../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData/myActor/layer"/>
+              <layerName>everything</layerName>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>9</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type reference="../../../../../../entry[9]/gamedata.LineageData/generations/entry/gamedata.ActorData/type"/>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>1.0</startHealth>
+              </health>
+              <basic>
+                <name>Nature</name>
+                <isActive>true</isActive>
+                <imagePath>projectiles/leaf.png</imagePath>
+                <heading>0.0</heading>
+              </basic>
+              <layer reference="../../../../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData/myActor/layer"/>
+              <layerName>everything</layerName>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>10</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type reference="../../../../../../entry[9]/gamedata.LineageData/generations/entry/gamedata.ActorData/type"/>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>1.0</startHealth>
+              </health>
+              <basic>
+                <name>Fire</name>
+                <isActive>true</isActive>
+                <imagePath>projectiles/flame.png</imagePath>
+                <heading>0.0</heading>
+              </basic>
+              <layer reference="../../../../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData/myActor/layer"/>
+              <layerName>everything</layerName>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>11</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type reference="../../../../../../entry[9]/gamedata.LineageData/generations/entry/gamedata.ActorData/type"/>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>1.0</startHealth>
+              </health>
+              <basic>
+                <name>Ice</name>
+                <isActive>true</isActive>
+                <imagePath>projectiles/snowflake.png</imagePath>
+                <heading>0.0</heading>
+              </basic>
+              <layer reference="../../../../../../../levels/entry/gamedata.LevelData/myWaves/gamedata.WaveData/waveEnemies/gamedata.EnemyInWaveData/myActor/layer"/>
+              <layerName>everything</layerName>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+  </pieces>
+  <numOptions>12</numOptions>
+</gamedata.GameData>

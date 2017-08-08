@@ -1,0 +1,516 @@
+<gamedata.GameData>
+  <name>Base Test 11</name>
+  <levels>
+    <entry>
+      <int>1</int>
+      <gamedata.LevelData>
+        <myWaves/>
+        <duration>100.0</duration>
+        <healthMultiplier>-1.0</healthMultiplier>
+        <speedMultiplier>-1.0</speedMultiplier>
+        <attackMultiplier>-1.0</attackMultiplier>
+        <condition class="gameengine.conditions.EnduranceCondition">
+          <myFinalFrame>100</myFinalFrame>
+          <myCurrentFrame>0</myCurrentFrame>
+        </condition>
+      </gamedata.LevelData>
+    </entry>
+  </levels>
+  <preferences>
+    <numLives>
+      <value class="int">0</value>
+    </numLives>
+    <enemyLoop>
+      <value class="boolean">false</value>
+    </enemyLoop>
+    <towersAttackable>
+      <value class="boolean">false</value>
+    </towersAttackable>
+    <wantMoney>
+      <value class="boolean">false</value>
+    </wantMoney>
+    <expByLevel>
+      <value class="boolean">false</value>
+    </expByLevel>
+    <pauseBetweenWaves>
+      <value class="boolean">false</value>
+    </pauseBetweenWaves>
+    <cleanLevel>
+      <value class="boolean">false</value>
+    </cleanLevel>
+    <musicFilePath>music/hero_song.mp3</musicFilePath>
+  </preferences>
+  <myLayers>
+    <myPathData>
+      <myPaths/>
+      <numOptions>0</numOptions>
+    </myPathData>
+    <myLayers/>
+    <myBaseData>
+      <myActorLocationTuples>
+        <util.Tuple>
+          <x class="gamedata.ActorData">
+            <myData/>
+            <type>
+              <type>Tower</type>
+              <imagePath>tower_icon.png</imagePath>
+              <placeable>true</placeable>
+            </type>
+            <health class="gamedata.composition.LimitedHealthData">
+              <startHealth>10.0</startHealth>
+            </health>
+            <basic>
+              <name>Charmander</name>
+              <isActive>true</isActive>
+              <imagePath>Pokemon Icons/charmander.png</imagePath>
+              <heading>0.0</heading>
+              <imageDimensions class="gameengine.grid.classes.Coordinates">
+                <x>0.1</x>
+                <y>0.1</y>
+              </imageDimensions>
+            </basic>
+            <layer>
+              <myPolygons/>
+            </layer>
+            <cost>0.0</cost>
+          </x>
+          <y class="gameengine.grid.classes.Coordinates">
+            <x>0.9312977099236641</x>
+            <y>0.19047619047619047</y>
+          </y>
+        </util.Tuple>
+        <util.Tuple>
+          <x class="gamedata.ActorData">
+            <myData/>
+            <type reference="../../../util.Tuple/x/type"/>
+            <health class="gamedata.composition.LimitedHealthData">
+              <startHealth>10.0</startHealth>
+            </health>
+            <basic>
+              <name>Bullbasaur</name>
+              <isActive>true</isActive>
+              <imagePath>Pokemon Icons/bullbasaur.png</imagePath>
+              <heading>0.0</heading>
+              <imageDimensions class="gameengine.grid.classes.Coordinates">
+                <x>0.1</x>
+                <y>0.1</y>
+              </imageDimensions>
+            </basic>
+            <layer>
+              <myPolygons/>
+            </layer>
+            <cost>0.0</cost>
+          </x>
+          <y class="gameengine.grid.classes.Coordinates">
+            <x>0.9351145038167938</x>
+            <y>0.391156462585034</y>
+          </y>
+        </util.Tuple>
+        <util.Tuple>
+          <x class="gamedata.ActorData">
+            <myData/>
+            <type reference="../../../util.Tuple/x/type"/>
+            <health class="gamedata.composition.LimitedHealthData">
+              <startHealth>10.0</startHealth>
+            </health>
+            <basic>
+              <name>Pikachu</name>
+              <isActive>true</isActive>
+              <imagePath>Pokemon Icons/pikachu.png</imagePath>
+              <heading>0.0</heading>
+              <imageDimensions class="gameengine.grid.classes.Coordinates">
+                <x>0.1</x>
+                <y>0.1</y>
+              </imageDimensions>
+            </basic>
+            <layer>
+              <myPolygons/>
+            </layer>
+            <cost>0.0</cost>
+          </x>
+          <y class="gameengine.grid.classes.Coordinates">
+            <x>0.4961832061068702</x>
+            <y>0.3299319727891156</y>
+          </y>
+        </util.Tuple>
+      </myActorLocationTuples>
+    </myBaseData>
+  </myLayers>
+  <types>
+    <types.BasicActorType>
+      <type>Troop</type>
+      <imagePath>enemy_icon.png</imagePath>
+      <placeable>true</placeable>
+    </types.BasicActorType>
+    <types.BasicActorType>
+      <type>Tower</type>
+      <imagePath>tower_icon.png</imagePath>
+      <placeable>true</placeable>
+    </types.BasicActorType>
+    <types.BasicActorType>
+      <type>Projectile</type>
+      <imagePath>projectile_icon.png</imagePath>
+      <placeable>true</placeable>
+    </types.BasicActorType>
+  </types>
+  <display>
+    <width>100</width>
+    <height>400</height>
+    <location>Left</location>
+    <actorOrder>
+      <gamedata.ActorData reference="../../../myLayers/myBaseData/myActorLocationTuples/util.Tuple[2]/x"/>
+      <gamedata.ActorData reference="../../../myLayers/myBaseData/myActorLocationTuples/util.Tuple[3]/x"/>
+      <gamedata.ActorData>
+        <myData/>
+        <type reference="../../../../myLayers/myBaseData/myActorLocationTuples/util.Tuple/x/type"/>
+        <health class="gamedata.composition.LimitedHealthData">
+          <startHealth>10.0</startHealth>
+        </health>
+        <basic>
+          <name>Jigglypuff</name>
+          <isActive>true</isActive>
+          <imagePath>Pokemon Icons/jigglypuff.png</imagePath>
+          <heading>0.0</heading>
+          <imageDimensions class="gameengine.grid.classes.Coordinates">
+            <x>0.1</x>
+            <y>0.1</y>
+          </imageDimensions>
+        </basic>
+        <layer>
+          <myPolygons/>
+        </layer>
+        <cost>0.0</cost>
+      </gamedata.ActorData>
+      <gamedata.ActorData reference="../../../myLayers/myBaseData/myActorLocationTuples/util.Tuple/x"/>
+      <gamedata.ActorData>
+        <myData/>
+        <type reference="../../../../myLayers/myBaseData/myActorLocationTuples/util.Tuple/x/type"/>
+        <health class="gamedata.composition.LimitedHealthData">
+          <startHealth>10.0</startHealth>
+        </health>
+        <basic>
+          <name>Snorlax</name>
+          <isActive>true</isActive>
+          <imagePath>Pokemon Icons/snorlax.png</imagePath>
+          <heading>0.0</heading>
+          <imageDimensions class="gameengine.grid.classes.Coordinates">
+            <x>0.1</x>
+            <y>0.1</y>
+          </imageDimensions>
+        </basic>
+        <layer>
+          <myPolygons/>
+        </layer>
+        <cost>0.0</cost>
+      </gamedata.ActorData>
+    </actorOrder>
+    <backgroundImagePath>default_map_background_0.jpg</backgroundImagePath>
+  </display>
+  <pieces>
+    <entry>
+      <int>0</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type>
+                <type>Troop</type>
+                <imagePath>enemy_icon.png</imagePath>
+                <placeable>false</placeable>
+              </type>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>10.0</startHealth>
+              </health>
+              <basic>
+                <name>Red</name>
+                <isActive>true</isActive>
+                <imagePath>balloons/red.png</imagePath>
+                <heading>0.0</heading>
+                <imageDimensions class="gameengine.grid.classes.Coordinates">
+                  <x>0.1</x>
+                  <y>0.1</y>
+                </imageDimensions>
+              </basic>
+              <layer>
+                <myPolygons/>
+              </layer>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <count>0</count>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>1</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type reference="../../../../../../entry/gamedata.LineageData/generations/entry/gamedata.ActorData/type"/>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>10.0</startHealth>
+              </health>
+              <basic>
+                <name>Blue</name>
+                <isActive>true</isActive>
+                <imagePath>balloons/blue.png</imagePath>
+                <heading>0.0</heading>
+                <imageDimensions class="gameengine.grid.classes.Coordinates">
+                  <x>0.1</x>
+                  <y>0.1</y>
+                </imageDimensions>
+              </basic>
+              <layer>
+                <myPolygons/>
+              </layer>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <count>0</count>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>2</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type reference="../../../../../../entry/gamedata.LineageData/generations/entry/gamedata.ActorData/type"/>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>10.0</startHealth>
+              </health>
+              <basic>
+                <name>Green</name>
+                <isActive>true</isActive>
+                <imagePath>balloons/green.png</imagePath>
+                <heading>0.0</heading>
+                <imageDimensions class="gameengine.grid.classes.Coordinates">
+                  <x>0.1</x>
+                  <y>0.1</y>
+                </imageDimensions>
+              </basic>
+              <layer>
+                <myPolygons/>
+              </layer>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <count>0</count>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>3</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData reference="../../../../../../myLayers/myBaseData/myActorLocationTuples/util.Tuple[2]/x"/>
+          </entry>
+        </generations>
+        <count>0</count>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>4</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData reference="../../../../../../myLayers/myBaseData/myActorLocationTuples/util.Tuple[3]/x"/>
+          </entry>
+        </generations>
+        <count>0</count>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>5</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData reference="../../../../../../display/actorOrder/gamedata.ActorData[3]"/>
+          </entry>
+        </generations>
+        <count>0</count>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>6</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData reference="../../../../../../myLayers/myBaseData/myActorLocationTuples/util.Tuple/x"/>
+          </entry>
+        </generations>
+        <count>0</count>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>7</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData reference="../../../../../../display/actorOrder/gamedata.ActorData[5]"/>
+          </entry>
+        </generations>
+        <count>0</count>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>8</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type>
+                <type>Projectile</type>
+                <imagePath>projectile_icon.png</imagePath>
+                <placeable>false</placeable>
+              </type>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>10.0</startHealth>
+              </health>
+              <basic>
+                <name>Water</name>
+                <isActive>true</isActive>
+                <imagePath>projectiles/raindrop.png</imagePath>
+                <heading>0.0</heading>
+                <imageDimensions class="gameengine.grid.classes.Coordinates">
+                  <x>0.1</x>
+                  <y>0.1</y>
+                </imageDimensions>
+              </basic>
+              <layer>
+                <myPolygons/>
+              </layer>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <count>0</count>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>9</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type reference="../../../../../../entry[9]/gamedata.LineageData/generations/entry/gamedata.ActorData/type"/>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>10.0</startHealth>
+              </health>
+              <basic>
+                <name>Nature</name>
+                <isActive>true</isActive>
+                <imagePath>projectiles/leaf.png</imagePath>
+                <heading>0.0</heading>
+                <imageDimensions class="gameengine.grid.classes.Coordinates">
+                  <x>0.1</x>
+                  <y>0.1</y>
+                </imageDimensions>
+              </basic>
+              <layer>
+                <myPolygons/>
+              </layer>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <count>0</count>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>10</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type reference="../../../../../../entry[9]/gamedata.LineageData/generations/entry/gamedata.ActorData/type"/>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>10.0</startHealth>
+              </health>
+              <basic>
+                <name>Fire</name>
+                <isActive>true</isActive>
+                <imagePath>projectiles/flame.png</imagePath>
+                <heading>0.0</heading>
+                <imageDimensions class="gameengine.grid.classes.Coordinates">
+                  <x>0.1</x>
+                  <y>0.1</y>
+                </imageDimensions>
+              </basic>
+              <layer>
+                <myPolygons/>
+              </layer>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <count>0</count>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+    <entry>
+      <int>11</int>
+      <gamedata.LineageData>
+        <generations>
+          <entry>
+            <int>0</int>
+            <gamedata.ActorData>
+              <myData/>
+              <type reference="../../../../../../entry[9]/gamedata.LineageData/generations/entry/gamedata.ActorData/type"/>
+              <health class="gamedata.composition.LimitedHealthData">
+                <startHealth>10.0</startHealth>
+              </health>
+              <basic>
+                <name>Ice</name>
+                <isActive>true</isActive>
+                <imagePath>projectiles/snowflake.png</imagePath>
+                <heading>0.0</heading>
+                <imageDimensions class="gameengine.grid.classes.Coordinates">
+                  <x>0.1</x>
+                  <y>0.1</y>
+                </imageDimensions>
+              </basic>
+              <layer>
+                <myPolygons/>
+              </layer>
+              <cost>0.0</cost>
+            </gamedata.ActorData>
+          </entry>
+        </generations>
+        <count>0</count>
+        <current>0</current>
+      </gamedata.LineageData>
+    </entry>
+  </pieces>
+  <numOptions>12</numOptions>
+</gamedata.GameData>

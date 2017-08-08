@@ -1,0 +1,47 @@
+
+<!-- saved from url=(0034)http://localhost/shadio/search.php -->
+<html class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Shadio_files/cb=gapi.loaded_0" async=""></script><script>window.alert('Logged in as harirajan0, welcome back!');</script>
+
+
+    
+        <link rel="stylesheet" href="./Shadio_files/style.css" type="text/css">
+        <title>Shadio</title>
+        <script type="text/javascript">
+            window.onbeforeunload = function() 
+            {
+                return 'Are you sure you want to leave? You will lose your spot in the queue!';
+            }         
+        </script>
+    </head>
+    <body data-gr-c-s-loaded="true">
+        <h1>
+            <img src="./Shadio_files/shadiologo.png" alt="Logo" style="width:64px;height:64px;">
+            Shadio
+        </h1>
+        <p>
+            </p><form id="songQueryForm" action="http://localhost/shadio/search.php#">
+                Song: <input type="text" id="songTitle">
+                Artist: <input type="text" id="songArtist">
+                Additional Qualifiers: <input type="text" id="songQualifier">
+                <br>
+                <button type="button" id="submitButton" onclick="submitSongQuery()">Submit</button>
+            </form>
+        <p></p>
+            <div id="userQueue"></div><table class="queue">
+                <caption>User Queue</caption>
+                <tbody class="queue">
+                    
+                </tbody>
+            </table>
+            <table class="queue">
+                <caption>Your Song Queue</caption>
+                <tbody class="queue" id="songQueue">
+                </tbody>
+            </table>
+        <div id="searchResults"></div><table style="color:white;"></table>
+        <div id="currentSong" style="color:white;"></div>
+        <script src="./Shadio_files/jquery-2.1.3.min.js"></script>
+        <script src="./Shadio_files/app.js"></script>
+        <script src="./Shadio_files/client.js" gapi_processed="true"></script>
+    
+<iframe name="oauth2relay661506930" id="oauth2relay661506930" src="./Shadio_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><iframe id="apiproxy5e5d55bf4d1379daf8cf27a5f71c4e427c3379a00.9171504826963004" name="apiproxy5e5d55bf4d1379daf8cf27a5f71c4e427c3379a00.9171504826963004" src="./Shadio_files/proxy.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px; display: none;"></iframe></body></html>

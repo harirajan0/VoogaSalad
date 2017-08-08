@@ -1,0 +1,79 @@
+<gamedata.GameData>
+  <name>help</name>
+  <levels>
+    <entry>
+      <int>1</int>
+      <gamedata.LevelData>
+        <myWaves/>
+        <duration>100.0</duration>
+        <healthMultiplier>-1.0</healthMultiplier>
+        <speedMultiplier>-1.0</speedMultiplier>
+        <attackMultiplier>-1.0</attackMultiplier>
+        <condition class="gameengine.conditions.EnduranceCondition">
+          <myFinalFrame>100</myFinalFrame>
+          <myCurrentFrame>0</myCurrentFrame>
+        </condition>
+      </gamedata.LevelData>
+    </entry>
+  </levels>
+  <preferences>
+    <numLives>
+      <value class="int">0</value>
+    </numLives>
+    <enemyLoop>
+      <value class="boolean">false</value>
+    </enemyLoop>
+    <towersAttackable>
+      <value class="boolean">false</value>
+    </towersAttackable>
+    <wantMoney>
+      <value class="boolean">false</value>
+    </wantMoney>
+    <expByLevel>
+      <value class="boolean">false</value>
+    </expByLevel>
+    <pauseBetweenWaves>
+      <value class="boolean">false</value>
+    </pauseBetweenWaves>
+    <cleanLevel>
+      <value class="boolean">false</value>
+    </cleanLevel>
+    <musicFilePath>music/hero_song.mp3</musicFilePath>
+  </preferences>
+  <myLayers>
+    <myPathData>
+      <myPaths/>
+      <numOptions>0</numOptions>
+    </myPathData>
+    <myLayers/>
+    <myBaseData>
+      <myActorLocationTuples/>
+    </myBaseData>
+  </myLayers>
+  <types>
+    <types.BasicActorType>
+      <type>Troop</type>
+      <imagePath>enemy_icon.png</imagePath>
+      <placeable>true</placeable>
+    </types.BasicActorType>
+    <types.BasicActorType>
+      <type>Tower</type>
+      <imagePath>tower_icon.png</imagePath>
+      <placeable>true</placeable>
+    </types.BasicActorType>
+    <types.BasicActorType>
+      <type>Projectile</type>
+      <imagePath>projectile_icon.png</imagePath>
+      <placeable>true</placeable>
+    </types.BasicActorType>
+  </types>
+  <display>
+    <width>100</width>
+    <height>400</height>
+    <location>Left</location>
+    <actorOrder/>
+    <backgroundImagePath>default_map_background_0.jpg</backgroundImagePath>
+  </display>
+  <pieces/>
+  <numOptions>0</numOptions>
+</gamedata.GameData>
